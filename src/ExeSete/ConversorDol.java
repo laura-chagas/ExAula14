@@ -9,15 +9,15 @@ public class ConversorDol {
     public double real;
     public double cotacao;
 
-    public double solicitacao(){
+    public void solicitacao(){
 
         System.out.println("Qual a cotação do dolar hoje? ");
         cotacao = scan.nextDouble();
 
-        return  0;
+
     }
 
-    public double converter(){
+    public void converter(){
 
         System.out.println("Informe quantos dolares você tem disponível: ");
         dolar = scan.nextDouble();
@@ -26,7 +26,7 @@ public class ConversorDol {
 
         System.out.println("Você tem R$" + real + " em real");
 
-        return 0;
+
     }
 
 }

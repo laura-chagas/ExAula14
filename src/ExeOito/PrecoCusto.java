@@ -9,7 +9,7 @@ public class PrecoCusto {
     public static double percentual;
     public static double precoCusto;
 
-    public double venderProduto(){
+    public void venderProduto(){
 
         System.out.println("Informe o preço de custo:  ");
         precoCusto = scan.nextDouble();
@@ -23,7 +23,6 @@ public class PrecoCusto {
 
         System.out.println("Valor de venda do produto é " + valorVenda);
 
-        return 0;
     }
 
 

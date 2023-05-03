@@ -10,7 +10,7 @@ public class Vendedor {
     public static double vendasEfetuadas;
 
 
-    public double registrarUsuario(){
+    public void registrarUsuario(){
 
         System.out.println("Informe seu nome: ");
         nome = scan.next();
@@ -20,23 +20,16 @@ public class Vendedor {
 
         System.out.println("Quantos reais ao todo foram efetuados nas vendas desse mês? ");
         vendasEfetuadas = scan.nextInt();
-
-      return 0;
       
     }
 
-    public double acrescimo(){
+    public void acrescimo(){
 
         double salarioAtual;
         double comissao = vendasEfetuadas * ((double) 15 / 100);
         
         salarioAtual = comissao + salarioFixo;
+        System.out.println("Nome: " + nome  + "\n Valor de vendas: " + vendasEfetuadas + "\n Salário: " + salarioFixo + "\n Salário no final do mês: " + salarioAtual);
 
-        System.out.println(nome + "\n" + vendasEfetuadas + "\n" + salarioFixo + "\n " + salarioAtual);
-        return 0;
     }
-
-
-
-
 }

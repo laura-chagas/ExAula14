@@ -5,7 +5,7 @@ public class Imc {
     public static double altura;
     public static double peso;
 
-    public double calcularImc(){
+    public static void calcularImc(){
 
         double imc = peso / (altura * altura);
 
@@ -20,7 +20,7 @@ public class Imc {
      } else if (imc > 40) {
          System.out.println("OBESIDADE GRAVE");
      }
-        return imc;
+
 
 
     }
